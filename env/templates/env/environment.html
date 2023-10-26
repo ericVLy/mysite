@@ -1,0 +1,23 @@
+<table>
+        <thead>
+        <tr>
+        <td>ip address</td>
+        <td>username</td>
+        <td>status</td>
+        <td>action</td>
+        </tr>
+        </thead>
+        <tbody>
+                {% if target %}
+                <tr>
+                <td>{{ target.ipaddress }}</td>
+                <td>{{ target.username }}</td>
+                <td>None</td>
+                <td>
+                        <button type="submit", name="action" value="alive">alive</button>
+                        <button type="submit", name="action" value="delete">delete</button>
+                </td>
+                </tr>
+                {% endif %}
+        </tbody>
+</table>
